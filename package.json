@@ -1,0 +1,46 @@
+{
+  "name": "@axtg/moos-components",
+  "description": "",
+  "files": [
+    "dist/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/library.umd.js",
+  "module": "./dist/library.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/library.esm.js",
+      "require": "./dist/library.umd.js"
+    }
+  },
+  "version": "0.0.5",
+  "keywords": [],
+  "author": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.43",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.9",
+    "vuepress": "^2.0.0-beta.43"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
+}
